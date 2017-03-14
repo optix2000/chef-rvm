@@ -58,9 +58,9 @@ default['rvm']['gpg_key']       = 'D39DC0E3'
 
 case platform
 when "redhat","centos","fedora","scientific","amazon"
-  default['rvm']['install_pkgs']   = %w{sed grep tar gzip bzip2 bash curl git}
+  default['rvm']['install_pkgs']   = %w{sed grep gzip bzip2 bash curl git}
 when "debian","ubuntu","suse"
-  default['rvm']['install_pkgs']   = %w{sed grep tar gzip bzip2 bash curl git-core}
+  default['rvm']['install_pkgs']   = %w{sed grep gzip bzip2 bash curl git-core}
 when "gentoo"
   default['rvm']['install_pkgs']   = %w{git}
 when "mac_os_x", "mac_os_x_server"
